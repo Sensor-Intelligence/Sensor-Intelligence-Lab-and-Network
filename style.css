@@ -239,3 +239,25 @@ margin:auto;
 .topbar nav a {
   font-size: 0.82rem;
 }
+.profile-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.profile-btn{
+  padding:11px 18px;
+  border-radius:999px;
+  background:#041d33;
+  color:white;
+  text-decoration:none;
+  font-weight:800;
+  transition:.25s;
+}
+
+.profile-btn:hover{
+  background:#00b7c3;
+  color:#041d33;
+  transform:translateY(-3px);
+}
