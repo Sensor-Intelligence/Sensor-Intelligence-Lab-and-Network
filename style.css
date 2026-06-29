@@ -69,9 +69,36 @@ blockquote{font-size:1.35rem;font-weight:800;color:var(--navy);border-left:5px s
 .footer{flex-direction:column}
 }
 
-.site-logo{
-    height:50px;
-    width:50px;
-    object-fit:cover;
-    border-radius:8px;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 260px;
+}
+
+.site-logo {
+  height: 46px;
+  width: 46px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 3px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+}
+
+.brand-subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #59f2ff;
 }
