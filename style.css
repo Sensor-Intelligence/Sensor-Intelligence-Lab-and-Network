@@ -1,0 +1,16 @@
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f5f8fb;color:#1b2b3a;line-height:1.6}
+.hero{background:linear-gradient(135deg,#062b4f,#0aa6b5);color:#fff;min-height:80vh}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 8%}
+nav ul{display:flex;gap:20px;list-style:none}
+nav a{color:#fff;text-decoration:none}
+.logo{font-size:1.4rem;font-weight:bold}
+.hero-content{padding:12% 8%;max-width:750px}
+.hero h1{font-size:3rem;margin-bottom:20px}
+.btn{display:inline-block;background:#fff;color:#0a5b8f;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:20px}
+section{padding:70px 8%}
+h2{text-align:center;margin-bottom:30px;color:#0a4f77}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#fff;padding:30px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.1);text-align:center}
+footer{background:#062b4f;color:#fff;text-align:center;padding:25px}
