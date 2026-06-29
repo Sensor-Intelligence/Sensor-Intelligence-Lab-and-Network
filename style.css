@@ -70,5 +70,6 @@ blockquote{font-size:1.35rem;font-weight:800;color:var(--navy);border-left:5px s
 .site-logo {
   height: 42px;
   width: auto;
+  object-fit: contain;
   border-radius: 10px;
-}}
+}
