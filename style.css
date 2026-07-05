@@ -339,3 +339,265 @@ margin:auto;
   border: 1px solid #ccefff;
   color: #005f73;
 }
+/* ================================
+   GLOBAL VIBRANT INNER PAGE STYLE
+   Paste at bottom of style.css
+================================ */
+
+/* Full site background */
+body {
+  background:
+    radial-gradient(circle at 8% 10%, rgba(0,183,195,.12), transparent 28%),
+    radial-gradient(circle at 92% 20%, rgba(89,242,255,.10), transparent 30%),
+    linear-gradient(180deg, #f4f8fb 0%, #eefaff 45%, #ffffff 100%);
+}
+
+/* Make all page heroes more dynamic */
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(89,242,255,.28), transparent 28%),
+    radial-gradient(circle at 85% 10%, rgba(0,183,195,.22), transparent 30%),
+    linear-gradient(135deg, #041d33 0%, #064c78 55%, #00b7c3 140%);
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background-image: radial-gradient(circle, rgba(255,255,255,.22) 1px, transparent 1.6px);
+  background-size: 34px 34px;
+  opacity: .22;
+  animation: move 24s linear infinite;
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -160px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: 1px solid rgba(89,242,255,.35);
+  box-shadow: 0 0 90px rgba(0,183,195,.28);
+}
+
+.page-hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Add soft depth to normal sections */
+.section {
+  position: relative;
+}
+
+.section:not(.alt) {
+  background:
+    radial-gradient(circle at top left, rgba(0,183,195,.08), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,.55), rgba(244,248,251,.9));
+}
+
+.section.alt {
+  background:
+    radial-gradient(circle at bottom right, rgba(89,242,255,.10), transparent 32%),
+    linear-gradient(180deg, #ffffff, #f6fcff);
+}
+
+/* Better article blocks */
+.article,
+.contact-box,
+.profile,
+.card,
+.feature,
+.timeline div,
+.news-item,
+.focus-card {
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,.88);
+  border: 1px solid rgba(6,76,120,.10);
+  box-shadow: 0 18px 50px rgba(4,29,51,.11);
+}
+
+/* Add glowing top line to cards */
+.card,
+.feature,
+.article,
+.news-item,
+.contact-box,
+.profile {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before,
+.feature::before,
+.article::before,
+.news-item::before,
+.contact-box::before,
+.profile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--teal), var(--aqua), var(--blue));
+}
+
+/* Section headings more energetic */
+.section-head h2,
+.article h2 {
+  background: linear-gradient(135deg, var(--navy), var(--blue), var(--teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Better links */
+.article a,
+.news-item a {
+  color: var(--blue);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.article a:hover,
+.news-item a:hover {
+  color: var(--teal);
+}
+
+/* Buttons more homepage-like */
+.btn.primary {
+  background: linear-gradient(135deg, var(--teal), var(--aqua));
+  color: var(--navy);
+  box-shadow: 0 12px 30px rgba(0,183,195,.25);
+}
+
+/* News page upgraded */
+.news-section {
+  background:
+    radial-gradient(circle at top left, rgba(0,183,195,.12), transparent 34%),
+    linear-gradient(180deg, #f7fcff 0%, #ffffff 50%, #eefaff 100%);
+}
+
+.news-timeline {
+  position: relative;
+}
+
+.news-item {
+  border-left: 0;
+  padding: 34px;
+}
+
+.news-item.featured {
+  background:
+    radial-gradient(circle at top right, rgba(89,242,255,.25), transparent 34%),
+    linear-gradient(135deg, #041d33, #064c78);
+  color: white;
+}
+
+.news-item.featured h2,
+.news-item.featured p,
+.news-item.featured .news-date {
+  color: white;
+}
+
+.news-item h2 {
+  color: var(--navy);
+}
+
+.news-date {
+  color: var(--blue);
+}
+
+.news-tag {
+  background: linear-gradient(135deg, var(--teal), var(--aqua));
+  color: var(--navy);
+}
+
+.news-tag.publication {
+  background: #dff9fc;
+  color: var(--blue);
+}
+
+.news-tag.announcement {
+  background: #e8f4ff;
+  color: var(--blue);
+}
+
+/* Network page hero fix */
+.network-hero {
+  background:
+    radial-gradient(circle at top left, rgba(89,242,255,.30), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(0,183,195,.25), transparent 35%),
+    linear-gradient(135deg, #041d33, #064c78);
+}
+
+/* Network collaborator avatar fix */
+.collaborator-card .avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f7ff, #b8f6ff);
+  color: #005f73;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 24px rgba(0,183,195,.18);
+}
+
+/* Focus cards */
+.focus-card {
+  background:
+    radial-gradient(circle at top right, rgba(89,242,255,.18), transparent 35%),
+    rgba(255,255,255,.9);
+}
+
+/* Make cards feel interactive */
+.card,
+.feature,
+.news-item,
+.focus-card,
+.article {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover,
+.feature:hover,
+.news-item:hover,
+.focus-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(4,29,51,.16);
+}
+
+/* Lists inside articles look cleaner */
+.article ul {
+  margin-top: 16px;
+}
+
+.article li {
+  padding-left: 4px;
+  margin-bottom: 10px;
+}
+
+/* Mobile refinement */
+@media(max-width:700px) {
+  .page-hero {
+    padding: 85px 6% 60px;
+  }
+
+  .page-hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .article,
+  .card,
+  .news-item {
+    padding: 24px;
+    border-radius: 22px;
+  }
+}
